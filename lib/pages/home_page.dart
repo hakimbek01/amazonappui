@@ -230,6 +230,7 @@ class _HomePageState extends State<HomePage> {
                   SizedBox(height: 8,),
                   //top products
                   Container(
+                    padding: EdgeInsets.all(16),
                     color: Colors.white,
                     child: Column(
                       children: [
