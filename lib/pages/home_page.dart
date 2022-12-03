@@ -76,10 +76,10 @@ class _HomePageState extends State<HomePage> {
                     height: 45,
                     color: Colors.blueGrey,
                     child: Row(
-                      children: [
-                        const Icon(Icons.location_on,color: Colors.lightBlue,),
-                        const SizedBox(width: 7,),
-                        const Text("Delivery to Uzbekistan , Republic of",style: TextStyle(color: Colors.white),)
+                      children: const [
+                        Icon(Icons.location_on,color: Colors.lightBlue,),
+                        SizedBox(width: 7,),
+                        Text("Delivery to Uzbekistan , Republic of",style: TextStyle(color: Colors.white),)
                       ],
                     ),
                   ),
@@ -168,18 +168,18 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.white,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text("Deal of the Day",style: TextStyle(fontSize: 18),),
-                        const SizedBox(height: 16,),
-                        const Image(
+                      children: const [
+                        Text("Deal of the Day",style: TextStyle(fontSize: 18),),
+                        SizedBox(height: 16,),
+                        Image(
                           image: AssetImage('assets/images/item_7.jpeg'),
                           fit: BoxFit.cover,
                           height: 240,
                         ),
-                        const SizedBox(height: 16,),
-                        const Text('Up to 31% off APC UPS Battery Back',style: TextStyle(fontSize: 17),),
-                        const SizedBox(height: 6,),
-                        const Text('\$10.99 - \$70.99', style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold),)
+                        SizedBox(height: 16,),
+                        Text('Up to 31% off APC UPS Battery Back',style: TextStyle(fontSize: 17),),
+                        SizedBox(height: 6,),
+                        Text('\$10.99 - \$70.99', style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold),)
                       ],
                     ),
                   ),
@@ -240,25 +240,24 @@ class _HomePageState extends State<HomePage> {
                           height: MediaQuery.of(context).size.width,
                           child: Column(
                             children: [
-                              Container(
-                                width: double.infinity,
-                                height: 200,
-                                child: Image(
-                                  image: AssetImage('assets/images/item_6.jpeg'),
-                                  fit: BoxFit.cover,
+                              Expanded(
+                                  child: Image(
+                                    image: AssetImage('assets/images/item_6.jpeg'),
+                                    fit: BoxFit.cover,
+                                    width: double.infinity,
                                 ),
                               ),
                               const SizedBox(height: 5,),
                               Expanded(
                                 child: Row(
-                                  children: [
+                                  children: const [
                                     Expanded(
                                         child: Image(
                                           image: AssetImage('assets/images/item_5.jpeg'),
                                           fit: BoxFit.cover,
                                         )
                                     ),
-                                    const SizedBox(width: 5,),
+                                    SizedBox(width: 5,),
                                     Expanded(
                                         child: Image(
                                           image: AssetImage('assets/images/item_2.jpeg'),
